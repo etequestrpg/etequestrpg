@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Etequest 3</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+	<header>
+		<div class="container">
+			<h1>
+				<em>Clube de RPG</em>
+				<span class="character"> — </span>
+				<span style="font-family: Alegreya; font-size: 4rem;">2025</span>
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="#home">SOBRE</a></li>
+					<li><a href="#campaigns">CAMPANHAS</a></li>
+					<li><a href="#contact">CONTATO</a></li>
+				</ul>
+            </nav>
+		</div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Seja bem-vindo ao clube de RPG!</h2>
+                <p>Sessões toda quarta, das 12:50 até 16:30.</p>
+            </div>
+        </section>
+
+        <section id="campaigns" class="campaigns">
+            <div class="container">
+                <h2>Campanhas Atuais</h2>
+                <div class="campaign">
+                    <h3>A Tecelagem — Mesa 1</h3>
+                    <p>O mundo é afetado por um fenômeno que transforma metade da população em feiticeiros. Agora,
+                        estudantes da Escola Jujutsu de Tóquio devem navegar por este mundo novo e bizarro.</p>
+                    <button class="learn-more-btn">Informações</button>
+                    <div class="additional-content">
+                        <ul>
+                            <li><strong>Sistema:</strong> Feiticeiros & Maldições (2.0)</li>
+                            <li><strong>Estilo:</strong> Comédia, ação e drama</li>
+                            <li><strong>Vagas estimadas:</strong> 4/6</li>
+                            <li><strong>Nível atual:</strong> Nível 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="campaign">
+                    <h3>[Campanha D&D] — Mesa 2</h3>
+                    <p>Descrição</p>
+                    <button class="learn-more-btn">Informações</button>
+                    <div class="additional-content">
+                        <ul>
+                            <li><strong>Sistema:</strong> Dungeons & Dragons</li>
+                            <li><strong>Estilo:</strong> cara só ouvi coisa bizarra dessa campanha</li>
+                            <li><strong>Vagas estimadas:</strong> 3/?</li>
+                            <li><strong>Nível atual:</strong> Nível ?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="campaign">
+                    <h3>[Campanha Ordem Paranormal] — Mesa 3</h3>
+                    <p>Descrição</p>
+                    <button class="learn-more-btn">Informações</button>
+                    <div class="additional-content">
+                        <ul>
+                            <li><strong>Sistema:</strong> Ordem Paranormal RPG</li>
+                            <li><strong>Estilo:</strong> </li>
+                            <li><strong>Vagas estimadas:</strong> 5/?</li>
+                            <li><strong>Nível atual:</strong> NEX ?%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <p><strong>Se tiver perguntas, contate um dos coordenadores do clube.</strong></p>
+                <p><strong>Email:</strong> <a href="mailto:piorparty312@gmail.com">piorparty312@gmail</a></p>
+                <p><strong>Whatsapp:</strong></p>
+                <ul>
+                    <li>+55 (11) 97015-3824</li>
+                    <li>----</li>
+                    <li>----</li>
+                </ul>
+            </div>
+        </section>
+		
+		<section>
+            <div class="container">
+				<div class="form">
+					<div class="inner"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3VexQs8FjCjh9f492phZxcT6v1rBmG6hj-ROXhikQ64doTw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+				</div>
+            </div>
+        </section>
+	<hr style="width: 75%; margin: 0 auto; margin-bottom: 20px;">
+    <footer>
+            <p>Jonas.</p>
+    </footer>
+    </main>
+
+    <script src="script.js">
+        // Get all buttons with the class 'learn-more-btn'
+        const buttons = document.querySelectorAll('.learn-more-btn');
+
+        // Loop through each button and add an event listener
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Toggle the 'active' class on the parent .campaign div
+                const campaign = button.closest('.campaign');
+                campaign.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
