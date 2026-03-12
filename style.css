@@ -106,6 +106,11 @@ header h1 {
     font-family: Dominican Small Caps;
 }
 
+.year {
+    font-family: Alegreya;
+    font-size: 4rem;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -143,7 +148,11 @@ nav ul li a:hover {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    .year {
+        font-size: 4rem;
     }
 
     nav ul {
@@ -155,23 +164,45 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        padding: 5px;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .campaign {
+        padding: 12px;
+    }
+
+    .campaign h3 {
+        font-size: 1.2rem;
+    }
+
+    .campaign .info {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+    }
+
+    .campaign .additional-content {
+        font-size: 0.9rem;
     }
 
     #contact {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #contact p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .form {
-        padding: 10px;
+        padding: 5px;
     }
 }
 
@@ -299,12 +330,12 @@ button:hover {
 #contact {
     background-color: var(--primary-color);
     color: var(--bg-color);
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 20px 0px 20px 0px;
 }
 
 #contact p {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--contact-text);
 }
 
@@ -380,6 +411,9 @@ footer {
 
 .music-controller.hidden {
     opacity: 0;
+}
+
+.music-controller.hidden * {
     pointer-events: none;
 }
 
@@ -450,8 +484,15 @@ footer {
         padding: 8px 10px;
         gap: 8px;
     }
+    .music-controller .song-info {
+        font-size: 1rem;
+    }
     .music-controller .controls {
         width: 100%;
+    }
+    .music-controller .controls button {
+        font-size: 0.9rem;
+        padding: 3px 8px;
     }
     .music-controller .volume-control {
         width: 100%;

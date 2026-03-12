@@ -255,26 +255,22 @@ loadSong(currentSongIndex);
 let hideTimeout;
 const musicController = document.getElementById('music-controller');
 
-function resetHideTimeout() {
-    musicController.classList.remove('hidden');
+function startHideTimer() {
     clearTimeout(hideTimeout);
     hideTimeout = setTimeout(() => {
         musicController.classList.add('hidden');
     }, 3000);
 }
 
-// Listen to various events to reset the inactivity timer
-window.addEventListener('mousemove', resetHideTimeout);
-window.addEventListener('scroll', resetHideTimeout);
-window.addEventListener('touchstart', resetHideTimeout);
-window.addEventListener('click', resetHideTimeout);
-window.addEventListener('keydown', resetHideTimeout);
-
-// Don't fade out if the user is hovering over the controller itself
-musicController.addEventListener('mouseenter', () => {
+function showController() {
     clearTimeout(hideTimeout);
-});
-musicController.addEventListener('mouseleave', resetHideTimeout);
+    musicController.classList.remove('hidden');
+}
+
+// Only reappears when interacting with the controller area specifically
+musicController.addEventListener('mouseenter', showController);
+musicController.addEventListener('mouseleave', startHideTimer);
+musicController.addEventListener('touchstart', showController, {passive: true});
 
 // Start the timer when the page loads
-resetHideTimeout();
+startHideTimer();
