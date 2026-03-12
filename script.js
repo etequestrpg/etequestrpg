@@ -169,16 +169,16 @@ buttons.forEach(button => {
 // Music Controller
 // ---------------------------------------------
 const songs = [
-    { title: "BRUTAL", src: "audio/BRUTAL.webm" },
-    { title: "O Bruto", src: "audio/O Bruto.webm" },
-    { title: "A Sangria", src: "audio/A Sangria.webm" },
-    { title: "O Rato", src: "audio/O Rato.webm" },
-    { title: "O Profeta", src: "audio/O Profeta.webm" },
-    { title: "Enigma", src: "audio/Enigma.webm" },
-    { title: "Coitado", src: "audio/Coitado.webm" },
-    { title: "Obsoleto", src: "audio/Obsoleto.webm" },
-    { title: "Prole", src: "audio/Prole.webm" },
-    { title: "Final Girl", src: "audio/Final Girl.webm" }
+    { title: "BRUTAL", src: "./audio/BRUTAL.webm" },
+    { title: "O Bruto", src: "./audio/O Bruto.webm" },
+    { title: "A Sangria", src: "./audio/A Sangria.webm" },
+    { title: "O Rato", src: "./audio/O Rato.webm" },
+    { title: "O Profeta", src: "./audio/O Profeta.webm" },
+    { title: "Enigma", src: "./audio/Enigma.webm" },
+    { title: "Coitado", src: "./audio/Coitado.webm" },
+    { title: "Obsoleto", src: "./audio/Obsoleto.webm" },
+    { title: "Prole", src: "./audio/Prole.webm" },
+    { title: "Final Girl", src: "./audio/Final Girl.webm" }
 ];
 
 // Shuffle the songs array for a random playlist on load

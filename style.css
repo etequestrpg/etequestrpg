@@ -2,38 +2,33 @@
 /* Fontes */
 /* ------ */
 @font-face {
-    font-family: Miller Text;
-    src: url(https://file.garden/Z8fjEnTgmgo8vRee/fonts/Miller%20Text%20Regular.otf);
-}
-
-@font-face {
     font-family: Adobe Hebrew;
     src: url(https://file.garden/Z8fjEnTgmgo8vRee/fonts/Adobe%20Hebrew%20Regular.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Blur Light;
     src: url(https://file.garden/Z8fjEnTgmgo8vRee/fonts/Blur%20Light%20Regular.otf);
-}
-
-@font-face {
-    font-family: Benjamin Franklin;
-    src: url(https://file.garden/Z8fjEnTgmgo8vRee/fonts/BenjaminFranklin.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Dominican Small Caps;
     src: url(https://file.garden/Z8fjEnTgmgo8vRee/fonts/Dominican%20Small%20Caps.TTF);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Aged Machine;
     src: url(https://file.garden/Z8fjEnTgmgo8vRee/fonts/Aged%20Machine.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Alegreya;
     src: url(https://file.garden/Z8fjEnTgmgo8vRee/fonts/Alegreya%20Variable.ttf);
+    font-display: swap;
 }
 
 /* -------------- */
@@ -79,7 +74,7 @@ body {
 }
 
 body:not(.header) {
-    background-image: url('images/noisy-background.jpg');
+    background-image: url('./images/noisy-background.jpg');
     background-repeat: repeat;
     background-blend-mode: overlay;
 }
