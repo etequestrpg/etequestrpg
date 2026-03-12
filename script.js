@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const palettes = [
     {
         // Default retro
@@ -279,15 +278,3 @@ musicController.addEventListener('mouseleave', resetHideTimeout);
 
 // Start the timer when the page loads
 resetHideTimeout();
-=======
-// ---------------------------------------------
-// Abrir a secção de "informações" quando clicar
-// ---------------------------------------------
-const buttons = document.querySelectorAll('.info');
-buttons.forEach(button => {
-	button.addEventListener('click', () => {
-		const campaign = button.closest('.campaign');
-		campaign.classList.toggle('active');
-	});
-});
->>>>>>> 4e606b4c01de3ee6f093217ac452d1592175be8b
